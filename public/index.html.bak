@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>
+      CMB Systems
+    </title>
+  </head>
+  <body>
+    <!-- <table>
+      <tr>
+        <td> -->
+          <iframe style="width: 50%; height: 100%;" src="http://192.168.0.58:99/george.html"></iframe>
+        <!--</td>
+        <td> -->
+          <iframe style="width: 50%; height: 100%;" src="http://192.168.0.101:99"></iframe>
+        <!-- </td>
+      </tr>
+    </table> -->
+  </body>
+</html>
