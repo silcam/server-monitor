@@ -38,7 +38,7 @@ since=$($root_dir/an-hour-ago.sh)
 sar -ur -s $since > tmp
 pretty_div tmp 'System Status' >> $index
 
-user_auth=$(cat dulu-auth)
+user_auth=$(cat $root_dir/dulu-auth)
 curl -u $user_auth http://192.168.0.101:99 >> $index
 
 cat $root_dir/index_finish.html >> $index
