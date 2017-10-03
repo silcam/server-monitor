@@ -4,7 +4,7 @@ hour=$(date +"%H")
 min_sec=$(date +":%M:%S")
 
 if [ $hour -gt 0 ]; then
-  hour=$(( $hour - 1 ))
+  hour=$(( 10#$hour - 1 ))
 fi
 
 if [ $hour -lt 10 ]; then
