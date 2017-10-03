@@ -2,7 +2,7 @@
 # Check up on some things and update a static html file for viewing
 
 root_dir=/var/www/sysadmin
-index=$root_dir/public/index.html
+index=$root_dir/public/index.html.new
 
 function pretty_div {
   echo '<h3>'
@@ -42,3 +42,5 @@ user_auth=$(cat $root_dir/dulu-auth)
 curl -u $user_auth http://192.168.0.101:99 >> $index
 
 cat $root_dir/index_finish.html >> $index
+
+mv $index $root_dir/public/index.html
